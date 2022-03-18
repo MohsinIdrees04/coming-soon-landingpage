@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+section {
+    background: url('imgs/people_town_dark.jpg');
+    width: 100%;
+    min-height: 150vh;
+    background-repeat: no-repeat;
+    object-fit: contain;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.container {
+    max-width: 1250px;
+    margin: 0 auto;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header {
+    margin: 80px 0;
+}
+
+.header .container {
+    max-width: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.header .logo {
+    margin-bottom: 50px;
+}
+.logo img {
+    width: 80px;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.header .text h1 {
+    font-size: 3.1em;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    line-height: 0.8em;
+    text-align: center;
+}
+.header .text h2 {
+    font-size: 2.4em;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: .1em;
+    text-align: center;
+    line-height: 1.1;
+    margin: 5px 0;
+}
+.header .text p{
+    width: 95%;
+    text-align: center;
+    font-size: .9em;
+}
+
+/* BOXES SECTION  */
+
+.boxes {
+    display: flex;
+    padding: 0 20px;
+    margin: 80px 0;
+}
+
+.box {
+    border: 3px solid white;
+    width: 100%;
+    margin: 2px;
+    overflow: hidden;
+}
+.box .text {
+    display: flex;
+    flex-direction: column;
+    padding: 18px;
+    line-height: 1.2;
+}
+.box .text h2 {
+    font-size: 40px;
+    font-weight: 400;
+}
+.box .text p {
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+/* FORM SECTION  */
+
+.form {
+    margin: 100px 0;
+}
+
+.form .container {
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+.input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 20px;
+}
+
+.input-text {
+    margin: 0 4px;
+}
+
+.input p {
+    color: white;
+    font-size: 13px;
+    margin-bottom: 6px;
+    
+}
+#name_input {
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 2px;
+    padding: 13px 10px;
+    color: white;
+}
+#email_input {
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 2px;
+    padding: 13px 10px;
+    color: white;
+}
+.input-btn{
+    margin-top: 23px;
+    margin-left: 3px;
+}
+
+#btn_input {
+    cursor: pointer;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 2px;
+    margin-bottom: 0;
+    display: inline;
+    min-width: 50px;
+    padding: 13px 27px;
+    color: white;
+}
+
+#btn_input:hover {
+    background-color: #83a83d;;
+}
+
+.text2 {
+    max-width: 90%;
+    margin: 30px auto;
+}
+.text2 p {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+/* RESPONSIVENESS  */
+
+@media (max-width: 590px) {
+    .input {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 100%;
+    }
+
+    .form .container {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .input-text {
+        display: block;
+    }
+    #name_input {
+        width: 300px;
+    }
+    #email_input {
+        width: 300px;
+    }
+    #btn_input {
+        width: 300px;
+    }
+    .input-text p{
+        margin-top: 12px;
+    }
+
+    .header .text h1 {
+        margin-bottom: 10px;
+        line-height: 1;
+}
+    .header .text h2 {
+        margin-bottom: 10px;
+    }
+    .header .text p{
+        width: 95%;
+        text-align: center;
+        font-size: .9em;
+    }
+}
